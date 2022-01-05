@@ -15,7 +15,7 @@ static const int failonclear = 1;
 static const int logosize = 75;
 /* grid width and height for right center alignment */
 static const int logow = 12;
-static const int logoh = 6;
+static const int logoh = 8;
 
 static XRectangle rectangles[9] = {
 	/* x    y       w       h */
@@ -33,8 +33,11 @@ static XRectangle rectangles[9] = {
 /*Enable blur*/
 #define BLUR
 /*Set blur radius*/
-static const int blurRadius=5;
+static const int blurRadius=10;
 /*Enable Pixelation*/
 //#define PIXELATION
 /*Set pixelation radius*/
-static const int pixelSize=0;
+static const int pixelSize = 0;
+
+/* time in seconds before the monitor shuts down */
+static const int monitortime = 5;
